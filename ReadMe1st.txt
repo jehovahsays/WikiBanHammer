@@ -13,7 +13,7 @@ WikiBanHammer can ban you from your own Mediawiki website.
 In order to unban yourself you will need to open the
 file named blackhole.dat and remove your ip address and save.
 
-How to install & configure mediawiki Extension:WikiBanHammer
+How to instal & configure mediawiki Extension:WikiBanHammer
 ---------------------------------------------------------
 
 Step 1.
@@ -58,11 +58,25 @@ www.example.com/blackhole/
 blackhole.dat must be server-writable log file (serves as the blacklist)
 
 Step 4.
+Open you mediawiki installation folder
+open the folder named includes
+open the file named Webstart.php
+scroll down to line 35
+and add this code 
+
+include(realpath(getenv('DOCUMENT_ROOT')) .'/blackhole/blackhole.php');
+
+
+save the file when your done.
+
+Step 5.
 Add the code below to your Localsettings.php
 
 wfLoadExtension( 'WikiBanHammer' );
 
-Step 5.
+
+
+Step 6.
 finally the last step
 open your mediawiki folder 
 open the folder named skins
