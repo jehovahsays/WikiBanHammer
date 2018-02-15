@@ -59,25 +59,13 @@ www.example.com/blackhole/<br>
 blackhole.dat must be server-writable log file (serves as the blacklist)<br>
 
 Step 4.<br>
-Open you mediawiki installation folder<br>
-open the folder named includes<br>
-open the file named Webstart.php<br>
-scroll down to line 35<br>
-and add this code <br>
-```
-include(realpath(getenv('DOCUMENT_ROOT')) .'/blackhole/blackhole.php');
-```
-<br>
-save the file when your done.<br>
-
-Step 5.<br>
 Add the code below to your Localsettings.php<br>
 ```
 wfLoadExtension( 'WikiBanHammer' );
 ```
 <br>
 
-Step 6.<br>
+Step 5.<br>
 finally the last step<br>
 open your mediawiki folder <br>
 open the folder named skins<br>
