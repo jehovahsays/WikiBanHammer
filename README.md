@@ -1,4 +1,5 @@
 # WikiBanHammer
+[![Build Status](https://travis-ci.org/jehovahsays/WikiBanHammer.svg?branch=master)](https://travis-ci.org/jehovahsays/WikiBanHammer)<br>
 Protect Your Mediawiki with a Blackhole for Bad Bots<br>
 I decided to create an Mediawiki Extension from a PHP script<br>
 <<<<<<< HEAD
