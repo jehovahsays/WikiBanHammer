@@ -1,8 +1,5 @@
 <?php
-header( 'Content-Type-Options: nosniff' );
-header( 'X-Content-Type-Options: nosniff' );
-header( 'XSS-Protection: 1; mode=block' );
-header( 'X-XSS-Protection: 1; mode=block' );
+
 class HelloWorld
 {
     /**
