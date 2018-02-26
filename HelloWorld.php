@@ -1,5 +1,11 @@
 <?php
-
+header_remove( 'X-Powered-By' );
+header( 'Content-Type-Options: nosniff' );
+header( 'X-Content-Type-Options: nosniff' );
+header( 'XSS-Protection: 1; mode=block' );
+header( 'X-XSS-Protection: 1; mode=block' );
+header( 'Frame-Options: Deny' );
+header( 'X-Frame-Options: Deny' );
 class HelloWorld
 {
     /**
